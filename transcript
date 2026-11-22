@@ -1,0 +1,68 @@
+# Loading project Lab 2A
+# Compile of Lab2_ALU.v was successful.
+# Compile of Lab2_test_ALU.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -novopt work.Lab2_test_ALU
+# vsim -novopt work.Lab2_test_ALU 
+# Start time: 14:37:18 on Nov 22,2026
+# ** Error (suppressible): (vsim-12110) The -novopt option has no effect on this product. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:37:19 on Nov 22,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 6
+vsim work.Lab2_test_ALU
+# vsim work.Lab2_test_ALU 
+# Start time: 14:39:35 on Nov 22,2026
+# //  ModelSim DE 2024.2 May 20 2024 Linux 4.18.0-553.124.1.el8_10.x86_64
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.Lab2_test_ALU
+# Loading work.Lab2_ALU
+add wave  \
+sim:/Lab2_test_ALU/test_instruction \
+sim:/Lab2_test_ALU/clk \
+sim:/Lab2_test_ALU/reset \
+sim:/Lab2_test_ALU/inputA \
+sim:/Lab2_test_ALU/inputB \
+sim:/Lab2_test_ALU/instruction \
+sim:/Lab2_test_ALU/alu_out \
+sim:/Lab2_test_ALU/expected \
+sim:/Lab2_test_ALU/i \
+sim:/Lab2_test_ALU/j \
+sim:/Lab2_test_ALU/outfile \
+sim:/Lab2_test_ALU/pat_error \
+sim:/Lab2_test_ALU/test_count \
+sim:/Lab2_test_ALU/true_out
+restart
+run -all
+# Testing instruction 000 ...
+# Testing instruction 001 ...
+# Testing instruction 010 ...
+# Testing instruction 011 ...
+# Testing instruction 100 ...
+# Testing instruction 101 ...
+# Testing instruction 110 ...
+# Testing instruction 111 ...
+# 
+# ======================================
+#         ALU TEST RESULTS
+# ======================================
+# Total tests : 393729
+# Errors      : 0
+# PASS: All ALU tests passed!
+# ======================================
+# 
+# ** Note: $stop    : /w/home.17/home/naomichenn/TSMC16/Lab2/Lab2_test_ALU.v(227)
+#    Time: 6299692100 ps  Iteration: 0  Instance: /Lab2_test_ALU
+# Break in Module Lab2_test_ALU at /w/home.17/home/naomichenn/TSMC16/Lab2/Lab2_test_ALU.v line 227
+wave zoom full
+# {0 ps} {6614676700 ps}
