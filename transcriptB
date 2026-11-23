@@ -1,0 +1,50 @@
+# Loading project Lab 2B
+vsim work.FSM_tb
+# vsim work.FSM_tb 
+# Start time: 19:10:52 on Nov 22,2026
+# //  ModelSim DE 2024.2 May 20 2024 Linux 4.18.0-553.124.1.el8_10.x86_64
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.FSM_tb
+# Loading work.FSM
+add wave  \
+sim:/FSM_tb/clk \
+sim:/FSM_tb/rst \
+sim:/FSM_tb/data \
+sim:/FSM_tb/out \
+sim:/FSM_tb/errors
+run -all
+# PASS t=260 data=1 out=0
+# PASS t=360 data=1 out=0
+# PASS t=460 data=0 out=0
+# PASS t=560 data=1 out=0
+# PASS t=660 data=1 out=0
+# PASS t=760 data=0 out=0
+# PASS t=860 data=1 out=1
+# PASS t=960 data=1 out=0
+# PASS t=1060 data=0 out=0
+# PASS t=1160 data=1 out=1
+# PASS t=1260 data=0 out=0
+# FSM TESTS PASSED
+# ** Note: $finish    : /w/home.17/home/naomichenn/TSMC16/Lab2/FSM_tb.v(69)
+#    Time: 129 ns  Iteration: 0  Instance: /FSM_tb
+# 1
+# Break in Module FSM_tb at /w/home.17/home/naomichenn/TSMC16/Lab2/FSM_tb.v line 69
+add wave  \
+sim:/FSM_tb/clk \
+sim:/FSM_tb/rst \
+sim:/FSM_tb/data \
+sim:/FSM_tb/out \
+sim:/FSM_tb/errors
+wave zoom full
+# {0 ps} {135500 ps}
